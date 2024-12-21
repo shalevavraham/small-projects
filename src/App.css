@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* מאפשר גלילה אם התוכן חורג מגובה המסך */
+  min-height: 100vh; /* אם התוכן לא תופס את כל גובה המסך, הדף יגולל */
+  box-sizing: border-box; /* למנוע בעיות עם padding */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.tasksList {
+  overflow-y: auto; /* מאפשר גלילה אם יש הרבה משימות */
+  max-height: 400px; /* יכול לעזור אם רוצים גבול על גובה הרשימה */
+}

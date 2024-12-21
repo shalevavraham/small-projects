@@ -1,0 +1,50 @@
+.tasksList ul {
+  padding: 0;
+}
+
+.inputText {
+  width: 400px;
+  height: 20px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.taskLeft {
+  display: flex;
+  align-items: center;
+}
+
+.inputCheckBox {
+  margin-right: 10px;
+}
+
+.taskName {
+  font-size: 18px;
+  color: #333;
+  padding: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.taskName.completed {
+  text-decoration: line-through;
+}
+
+.task {
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  background-color: gainsboro;
+  padding: 8px;
+  width: 400px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.tasksListButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
